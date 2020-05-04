@@ -2,19 +2,13 @@ package com.bl.di;
 
 public class Student {
 
-    private int id;
-    private MathCheat mathCheat;
+    private ICheat cheat;
 
     public void cheating(){
-        mathCheat.mathCheat();
-        System.out.println("my id is " + id + ", do whatever you want.");
+        cheat.cheat();
     }
 
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public void setMathCheat(MathCheat mathCheat) {
-        this.mathCheat = mathCheat;
+    public void setCheat(ICheat cheat) {
+        this.cheat = cheat;
     }
 }

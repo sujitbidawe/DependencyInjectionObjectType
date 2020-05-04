@@ -1,12 +1,10 @@
 package com.bl.di;
 
-public class MathCheat {
+public class MathCheat implements ICheat{
 
-    public MathCheat() {
-        System.out.println("Math cheat class constructor called");
-    }
-
-    public void mathCheat(){
+    @Override
+    public void cheat() {
         System.out.println("Math cheating started");
     }
+
 }

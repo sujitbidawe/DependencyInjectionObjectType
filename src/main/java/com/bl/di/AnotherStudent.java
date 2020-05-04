@@ -2,13 +2,13 @@ package com.bl.di;
 
 public class AnotherStudent {
 
-    private MathCheat cheat;
+    private ICheat cheat;
 
-    public void setCheat(MathCheat cheat) {
+    public void setCheat(ICheat cheat) {
         this.cheat = cheat;
     }
 
     public void startCheating(){
-        cheat.mathCheat();
+        cheat.cheat();
     }
 }

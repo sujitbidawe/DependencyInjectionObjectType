@@ -4,13 +4,14 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <bean id = "mathCheatObjectValue" class="com.bl.di.MathCheat"></bean>
+    <bean id = "scienceCheatObjectValue" class="com.bl.di.ScienceCheat"></bean>
+
     <bean id="stu" class="com.bl.di.Student">
-        <property name="id" value="1001"/>
-        <property name="mathCheat" ref="mathCheatObjectValue" />
+        <property name="cheat" ref="mathCheatObjectValue" />
     </bean>
 
     <bean id="anotherStu" class="com.bl.di.AnotherStudent">
-        <property name="cheat" ref="mathCheatObjectValue"></property>
+        <property name="cheat" ref="scienceCheatObjectValue"></property>
     </bean>
 
 </beans>
